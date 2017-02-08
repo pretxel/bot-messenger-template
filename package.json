@@ -9,6 +9,7 @@
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean  && npm run build-server",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku": "cp config/default.json.example config/default.json && npm run build && node ./build/bot.js",
     "start": "npm run build && node ./build/bot.js"
   },
   "repository": {
