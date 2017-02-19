@@ -135,11 +135,6 @@ bower_components
 .bower-tmp
 
 
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
-
 #extra stuff to ignore
 prepros.cfg
 *.sublime-project
