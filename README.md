@@ -25,4 +25,7 @@ npm run build
 node build/bot.js
 ```
 
-We recommended use PM2 for production environment.
+## AWS Elastic Beanstalk
+```bash
+eb deploy -l <version>
+```
