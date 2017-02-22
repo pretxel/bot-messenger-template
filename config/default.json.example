@@ -3,7 +3,7 @@
     "pageAccessToken": "EAAJ6xZBCA2jQBAD6aH5CIk2F2K0ZBqUegaNMzZBwEBHIyQT4hDJx8jn9PwF5Jt8jUBYMeoA4HdUwxsWrDZB5OZBv0PeZCsMrDHzhBz2iUPHUDZCty6Dxc9tPGLfyhHoP2koylpZAIrAdjSmrdbgTSeFIJJZCCHMbWwrMeP6mkxx894AZDZD",
     "validationToken": "123456789",
     "serverURL": "http://3cc78f95.ngrok.io",
-    "port": "8888",
+    "port": "8081",
 
     "aws" : {
         "apiVersion": "",
