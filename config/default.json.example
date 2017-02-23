@@ -1,9 +1,11 @@
 {
-    "appSecret": "bb71c558453332ea230e5705dc62d716",
-    "pageAccessToken": "EAAJ6xZBCA2jQBAD6aH5CIk2F2K0ZBqUegaNMzZBwEBHIyQT4hDJx8jn9PwF5Jt8jUBYMeoA4HdUwxsWrDZB5OZBv0PeZCsMrDHzhBz2iUPHUDZCty6Dxc9tPGLfyhHoP2koylpZAIrAdjSmrdbgTSeFIJJZCCHMbWwrMeP6mkxx894AZDZD",
+    "appSecret": "454353453",
+    "pageAccessToken": "5634563454565456gsdfgsdfgdfgsdfgdfsgsdf",
+    "accessToken": "123123434"
     "validationToken": "123456789",
     "serverURL": "http://3cc78f95.ngrok.io",
     "port": "8081",
+    "levelLogging": "INFO",
 
     "aws" : {
         "apiVersion": "",
