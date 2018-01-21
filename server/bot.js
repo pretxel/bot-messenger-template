@@ -1,3 +1,5 @@
+require("babel-core/register");
+require("babel-polyfill");
 import winston from "winston";
 import uuid from "uuid";
 import config from "config";
@@ -6,6 +8,8 @@ import bodyParser from "body-parser";
 import facebook from "./facebook/index";
 import request from "request";
 import Presenter from "./presenters";
+
+
 
 const ENV = (process.env.ENV) ?
   process.env.ENV :

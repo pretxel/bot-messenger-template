@@ -1,3 +1,5 @@
+require("babel-core/register");
+require("babel-polyfill");
 import crypto from 'crypto';
 import request from 'request-promise';
 import config from 'config';
