@@ -20,6 +20,7 @@ npm install
 ```bash
 npm run dev
 npm run ngrok
+
 ```
 
 
