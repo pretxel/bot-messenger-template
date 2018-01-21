@@ -5,7 +5,6 @@ Homestead.yaml
 Homestead.json
 /storage/*.csv
 /config/default.json
-/build
 
 ### OSX ###
 .DS_Store
@@ -64,6 +63,7 @@ build/Release
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+package-lock.json
 
 ### grunt ###
 # Grunt usually compiles files inside this directory
@@ -80,6 +80,7 @@ dist/
 
 ## Directory-based project format:
 .idea/
+.vscode/
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
@@ -124,6 +125,9 @@ crashlytics-build.properties
 /.idea
 /storage/*.sqlite
 
+.serverless/
+build/
+
 ## Compasss ##
 .sass-cache
 */.sass-cache
@@ -144,3 +148,5 @@ bower_components
 prepros.cfg
 *.sublime-project
 *.sublime-workspace
+
+

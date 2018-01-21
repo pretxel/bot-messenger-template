@@ -1,28 +1,25 @@
-# Messenger Platform Bot Template
+# Messenger Bot
+
+## Prerequisites
+- NodeJS 8.8.0
+- Ngrok -- https://ngrok.com/
 
 
 ## Configuration
-
+ 
 ```bash
 cp config/default.json.example config/default.json
 ```
-
 
 ## Setup
 ```bash
 npm install
 ```
 
-
-## Run on development
+## Run for developers
 ```bash
 npm run dev
+npm run ngrok
 ```
 
-## Production
-```bash
-npm run build
-node build/bot.js
-```
 
-We recommended use PM2 for production environment.
