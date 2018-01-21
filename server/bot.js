@@ -5,7 +5,7 @@ import uuid from "uuid";
 import config from "config";
 import express from "express";
 import bodyParser from "body-parser";
-import facebook from "./facebook/index";
+import facebook from "./facebook";
 import request from "request";
 import Presenter from "./presenters";
 
@@ -15,8 +15,8 @@ const ENV = (process.env.ENV) ?
   process.env.ENV :
   config.get("env");
 
-const APP_NAME = (process.env.HOST_NAME) ?
-  process.env.HOST_NAME :
+const APP_NAME = (process.env.APP_NAME) ?
+  process.env.APP_NAME :
   config.get("app_name");
 
 const PORT = (process.env.PORT) ?
@@ -28,6 +28,7 @@ const LEVEL_LOGGING = (process.env.LEVEL_LOGGING) ?
   config.get("levelLogging");
 
 // MongoDB Connection
+/*
 const HOST_NAME = (process.env.HOST_NAME) ?
   process.env.HOST_NAME :
   config.get('mongo.hostName');
@@ -43,6 +44,7 @@ const USER_NAME = (process.env.USER_NAME) ?
 const PASSWORD = (process.env.PASSWORD) ?
   process.env.PASSWORD :
   config.get('mongo.password');
+*/
 
 const VALIDATION_TOKEN = (process.env.VALIDATION_TOKEN) ?
 process.env.VALIDATION_TOKEN :
@@ -87,9 +89,9 @@ app.post("/webhook", (req, res) => {
           //console.info('-----');
 
           pageEntry.messaging.forEach((messagingEvent) => {
-            console.info('Ejecutando evento:');
-            console.info(messagingEvent);
-            console.info('-----');
+            winston.log('info','Ejecutando evento:');
+            winston.log('info',messagingEvent);
+            winston.log('info','-----');
 
 
             if (messagingEvent.referral) {
